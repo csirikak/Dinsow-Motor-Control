@@ -38,9 +38,9 @@ else:
 	exit()
     else:
 	dev1 = sys.argv[1]
-#    dev2 = sys.argv[2]
+#       dev2 = sys.argv[2]
     	board1 = serial.Serial(dev1, 19200)
-#    with serial.Serial(dev2, 19200, timeout=10) as board2:
+#       board2 = serial.Serial(dev2, 19200)
 global reply
 global sp
 global ac
@@ -183,9 +183,12 @@ def sendSpeed():
     for i in range(4):
 	spa[i] = sp[i] 
 #-------------------------------------------SEND SERIAL
-    board1.write('\x5C')
-    board1.write('\xDA')
-    sleep(.1)
+#===============================FIX THIS
+    board1.write(uint8_t(sp[0]))
+    board1.write(uint8_t(sp[1]))
+    board2.write(uint8_t(sp[3]))
+    board2.write(uint8_t(sp[4]))
+    sleep(.05)
 #-------------------------------------------DECLARE AND START THREADS
 getinput = threading.Thread(target=UserInput)
 send = threading.Thread(target=sendSpeed)
