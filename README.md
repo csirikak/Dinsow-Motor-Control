@@ -4,6 +4,9 @@ Currently with this version, it is possible to control the mainboard using the A
 Instructions for flashing the mainboard can be found here:
 https://github.com/NiklasFauth/hoverboard-firmware-hack/blob/master/README.md
 
+
+You must use flash hover.bin, or compile the code in the hoverboard-firmware-hack directory in this repository if yo 
+
 # Instructions for control:
 ```
 All speeds fall within 1000, -1000.
