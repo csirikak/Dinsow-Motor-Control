@@ -5,7 +5,13 @@ Instructions for flashing the mainboard can be found here:
 https://github.com/NiklasFauth/hoverboard-firmware-hack/blob/master/README.md
 
 
-You must use flash hover.bin, or compile the code in the hoverboard-firmware-hack directory in this repository if yo 
+You must use flash one of the .bin files, or compile the code in the hoverboard-firmware-hack directory in this repository if you wish to not have errors.
+
+Note: Check the logic voltage before connecting anything to the Aduino, the color coding is sometimes reversed.
+
+To wire the board and Arduino look for the UART-L cable (The one next to the buzzer) and connect the GND and RX pins to the corresponding pins on the Arduino (GND, 6 and 11).
+
+The Arduino sketch has been configured for one board, uncomment the comments @ ln 425-426 to use two boards.
 
 # Instructions for control:
 ```
