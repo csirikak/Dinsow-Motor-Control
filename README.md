@@ -19,5 +19,6 @@ Emergency stop: STOP
 
 ---
 
-code based on Segway_wantai2_with_serial_command_v3.ino - Program for control BLDC Motor created by Muchammad Sobrun Ibnu Atfal.
-Copyright CT Asia Robotics CO., Ltd
+Code based on Segway_wantai2_with_serial_command_v3.ino - Program for control BLDC Motor created by Muchammad Sobrun Ibnu Atfal.
+
+Copyright 2018 CT Asia Robotics CO., Ltd
