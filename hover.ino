@@ -24,6 +24,11 @@ SoftwareSerial board2(5, 6);
 void setup() {
   Serial.begin(9600);
   board1.begin(19200);
+  Serial.print("Hoverboard Mainboard Controller");
+  Serial.print("\n");
+  Serial.print("CT Asia Robotics CO., Ltd. 2018");
+  Serial.print("\n");
+  //Serial.print("Type ? or --help for help");
    
 }
 void loop(void){
