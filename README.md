@@ -25,6 +25,7 @@ Get speed limit: wheel ID + GLMT
 Get last requested speed: wheel ID + LST
 Get acceleration rate: wheel ID + GAC
 Get last actual speed: wheel ID + GSP
+Disable wheel: wheel ID + DI
 Emergency stop: STOP
 ```
 ---
