@@ -1,5 +1,5 @@
 # Dinsow Motor Control
-This program allows for the control of a pair of hoverboard wheels with acceleration and deacceleration. 
+This program allows for the control of a pair of hoverboard wheels with acceleration and deacceleration using the provided commands. Useful for a large robot.
 
 Currently with this version, it is possible to control the mainboard using the Arduino, however the python version intended to replace the Arduino is not working. 
 
@@ -12,7 +12,10 @@ Note: Check the logic voltage before connecting anything to the Aduino, the colo
 
 To wire the board and Arduino look for the UART-L cable (The one next to the buzzer) and connect the GND and RX pins to the corresponding pins on the Arduino (GND, 6 and 11). Sometimes the color of the wiring is incorrect so please use a multimeter to verify (I fried an Arduino this way).
 
-The Arduino sketch has been configured for one mainboard, uncomment the comments @ ln 425-426 to use two boards. Modification will be necessary if you want more.
+The Arduino sketch has been configured for one mainboard, uncomment the comments @ ln 431-432 to use two boards. Modification will be necessary if you want more than two.
+
+Wheel ID 1,2 are for board 1
+Wheel ID 3,4 are for board 2
 
 # Instructions for control:
 ```
