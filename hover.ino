@@ -1,4 +1,5 @@
 //Based on Segway_wantai2_with_serial_command_v3.ino - Program for control BLDC Motor created by Muchammad Sobrun Ibnu Atfal.
+//By Chiripol Sirikakan, June-August 2018
 //CT Asia Robotics LTD. 2018
 
 #include <SoftwareSerial.h>
@@ -427,8 +428,8 @@ delay(50);
 //---------------------------------------------------------------------------SEND SPEED COMMAND
 board1.write((uint8_t *) &sp1, sizeof(sp1));
 board1.write((uint8_t *) &sp2, sizeof(sp2));
-//board2.write((uint8_t *) &sp3, sizeof(sp3));
-//board2.write((uint8_t *) &sp4, sizeof(sp4));
+//board2.write((uint8_t *) &sp3, sizeof(sp3)); //Uncomment these two to allow for another board.
+//board2.write((uint8_t *) &sp4, sizeof(sp4)); 
 delay(50);
 //---------------------------------------------------------------------------SET LAST SPEED IN MEMORY
 spa1 = sp1;
