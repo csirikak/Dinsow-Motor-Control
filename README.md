@@ -10,7 +10,7 @@ Please flash using one of the provided files if you would like to skip having to
 
 Note: Check the logic voltage before connecting anything to the Aduino, the color coding is sometimes reversed.
 
-To wire the board and Arduino look for the UART-L cable (The one next to the buzzer) and connect the GND and RX pins to the corresponding pins on the Arduino (GND, 6 and 11). Sometimes the color of the wiring is incorrect so please use a multimeter to verify (I fried an Arduino this way).
+To wire the board and Arduino look for the UART-L cable (The one next to the buzzer) and connect the GND and RX pins to the corresponding pins on the Arduino (GND, 6 and 11).
 
 The Arduino sketch has been configured for one mainboard, uncomment the comments @ ln 431-432 to use two boards. Modification will be necessary if you want more than two.
 
